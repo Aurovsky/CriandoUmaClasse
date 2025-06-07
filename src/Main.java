@@ -1,3 +1,5 @@
+import Model.Aluno;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -44,7 +46,45 @@ public class Main {
             bond.buyBond(24); // Compra um título com prazo de 24 meses
             bond.simulateInterest(); // Simula os juros por 24 meses
         }
+        System.out.println("______________________________________________________");
+        System.out.println("______________________________________________________");
+        {
+            Aluno aluno01 = new Aluno();
+            aluno01.nome = "Paulo";
+            aluno01.altura = 1.77;
+            aluno01.anoMatricula = 2023;
 
+            Aluno aluno02 = new Aluno();
+            aluno02.nome = "Marcos";
+            aluno02.altura = 1.65;
+            aluno02.anoMatricula = 2024;
 
+            Aluno aluno03 = new Aluno();
+            aluno03.nome = "Marcia";
+            aluno03.altura = 1.58;
+            aluno03.anoMatricula = 2022;
+
+            Aluno aluno04 = new Aluno();
+            aluno04.nome = "Silvia";
+            aluno04.altura = 1.75;
+            aluno04.anoMatricula = 2021;
+
+            System.out.println(aluno01.nome + " tem " + aluno01.altura + "m");
+            aluno01.estudar();
+            System.out.println("---");
+
+            System.out.println(aluno02.nome + " tem " + aluno02.altura + "m");
+            aluno02.estudar();
+            System.out.println("---");
+
+            System.out.println(aluno03.nome + " tem " + aluno03.altura + "m");
+            aluno03.estudar();
+            System.out.println("---");
+
+            System.out.println(aluno04.nome + " tem " + aluno04.altura + "m");
+            aluno04.estudar();
+            System.out.println("---");
+
+        }
     }
 }
